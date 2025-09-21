@@ -1,0 +1,14 @@
+[Unit]
+Description=GPIO Monitor for Zabbix Agent
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/camportal/gpio.py
+Restart=always
+RestartSec=2s
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
