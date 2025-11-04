@@ -1,5 +1,0 @@
-paths:
-  cam1:
-    source: rtsp://admin:qwerty123@192.168.0.5:554/cam/realmonitor?channel=1&subtype=1
-rtsp: true
-rtspAddress: :8554
